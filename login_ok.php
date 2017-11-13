@@ -51,6 +51,7 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
                     if (!$exito)
                     {
                         echo "Usuario incorrecto <a href='login.php'> Volver al login. </a>";
+						echo "                   <a href='register.php'> Regístrate! </a>";
                     }       
                 }
             }else

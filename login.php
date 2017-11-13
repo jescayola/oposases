@@ -24,7 +24,7 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
 		<?php
 			if (isset($_SESSION["id"]))
 			{
-				echo"<h1 id='t1'>¡Ya estás logeado!</h1>";
+				echo"<h1>¡Ya estás logeado!</h1>";
 			}
 			else
 			{

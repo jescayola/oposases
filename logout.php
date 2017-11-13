@@ -4,9 +4,6 @@ session_unset();
 session_destroy();
 ?>
 
-
-</form>
-<a href="login.php">VOLVER</a>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -17,4 +14,7 @@ session_destroy();
 			<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	</head>
+	<body>	
+		<a href="login.php">VOLVER</a>
+	</body>
 </html>
