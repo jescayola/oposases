@@ -46,7 +46,7 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
 					}
 					else
 					{
-						$consulta="INSERT INTO USUARIOS (nombre, apellido1, apellido2, dni, ciudad, telefono, email, password) VALUES('".$_POST["name"]."','".$_POST["apell1"]."','".$_POST["apell2"]."','".$_POST["dni"]."','".$_POST["ciudad"]."','".$_POST["telefono"]."','".$_POST["email"]."','".$_POST["pass1"]."')";
+						$consulta="INSERT INTO USUARIOS (nombre, apellido1, apellido2, dni, ciudad, telefono, email, password,rol) VALUES('".$_POST["name"]."','".$_POST["apell1"]."','".$_POST["apell2"]."','".$_POST["dni"]."','".$_POST["ciudad"]."','".$_POST["telefono"]."','".$_POST["email"]."','".$_POST["pass1"]."','".$_POST["rol"]."')";
 						mysqli_query($conector,$consulta);
 						echo "<h1>Ya estás registrado!!</h1><br/><br/><br/><br/>";
 					}
@@ -63,7 +63,9 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
 		{
 			header("location: index.php");
 		}
+		echo "<a href='index.php'>Home</a>";
 		?>
+		
 	</div>
 </body>
 </html>

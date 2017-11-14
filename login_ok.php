@@ -42,7 +42,7 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
                                 $_SESSION["id"]=$registro["id_usuario"];
                                 $_SESSION["user"]=$usernameform;  
                                 $_SESSION["admin"]=$registro["rol"];
-								echo "<h1>WELCOMEEEEEE   ". $usernameform."<h1>";
+								echo "<h1>Bienvenido ". $usernameform."<h1>";
 								echo "<a href='logout.php'>Abandonar sesion</a>";
                                 
                             }

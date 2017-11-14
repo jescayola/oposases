@@ -33,7 +33,10 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
 			Email: <input type="text" name="email"/><br/>
 			Contraseña: <input type="password" name="pass1"/><br/>
 			Repite tu contraseña: <input type="password" name="pass2"/><br/>
-			
+			<select class="campo" name="rol">
+                <option value="2">Profesor</option>
+                <option value="3">Usuario</option>
+            </select>
 			<input type="submit" name="submit" value="REGISTRAR"/>
 		</form>
 		<br/>
