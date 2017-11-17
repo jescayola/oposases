@@ -22,7 +22,7 @@ else
 	{
 		//profesor
 	}
-	elseif($_SESSION["rol"]==1)
+	elseif($_SESSION["rol"]==3)
 	{
 		//alumno
 	}
