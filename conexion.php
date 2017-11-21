@@ -8,9 +8,7 @@ $conector=mysqli_connect($hostbbdd,$userbbdd,$passwordbbdd,$bbdd);
 session_start();
 if(!isset($_SESSION["rol"]))
 {
-	echo "No has iniciado sesión <a href='login.php'> Vuelve a intentarlo </a>";
-	echo "<a href='login.php'> Volver al registro. </a>";
-	echo "<a href='index.php'> Volver al inicio. </a>";
+	header("location: index.php");
 }
 else
 {
