@@ -13,32 +13,16 @@ session_start();
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>-Logueate-</title>
+    <title>-Home-</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-	<div>
-		<?php
-			if (isset($_SESSION["id"]))
-			{
-				echo"<h1>¡Ya estás logeado!</h1>";
-				echo"<h1><a href="profile.php">¡Ve a tu perfil!</a></h1>
-			}
-			else
-			{
-				echo"<h1 id='t1'>Inicia sesión</h1>
-					<form id='formulario' action='login_ok.php' method='post'>
-					<h2 class='t2'>Nombre de usuario</h2>
-					<input type='text' name='nombre'>
-					<h2 class='t2'>Contraseña</h2>
-					<input type='password' name='password'>
-					<input type='submit' value='Iniciar sesión!' class='boton'>
-					<br>
-				</form>";
-			}
-		?>
-	</div>
+	<h1>WELCOME !</h1>
+	<a href='login.php'> Entra! </a> 
+	</br>
+	</br>
+	<a href='register.php'> Regístrate </a>
 </body>
 </html>
